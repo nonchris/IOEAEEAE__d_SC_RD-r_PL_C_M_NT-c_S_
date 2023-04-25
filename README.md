@@ -1,23 +1,38 @@
-# discord-bot-template
-Generic, functional bot based on discord.py V2.    
-Including:
-- general bot setup, saving your time
-  - overwritten behaviour in `on_ready()`, `setup_hook()` and `on_guild_join()`  
-  - cog-structure
+# *Introducing the next level of naming conventions!*
+After `CamelCase` and `snake_case`, we now present `EAEEAE__r_PL_C_M_NTc_S_`.
 
-- commands
-  - ping-commands for slash- and chat-usage as demonstration
-  - a custom help command for old-style chat-command as examples
-  - old-style reacts to prefix and mention
+It's incredibly simple, based on the much-loved `sARCASTICcASE`:  
+Pull each vowel forward and replace it with an underscore.  
+Now place two underscores between the important starting block and the rear part of the name.  
 
-- logging setup for console and file
-- utils for easy embed creation, id-extraction and more
-- easy to use external configuration using json or env-variables
-- overall project structure for easy packaging and deployment
+__Improvements compared to conventional naming conventions:__  
+1. See the most important building blocks of modern language at first glance.
 
-This template is aimed at beginners ([how to start](#I'm-new-to-bots---where-to-start?)) for learning purposes and 
-advanced users for 
-saving time.
+2. Instantly recognize from the front vowels whether it's the same word, similar to a checksum, this saves a large part of the reading time.
+
+3. Easy conversion through our AI-powered formatter `EAEEAEOE__r_PL_C_M_NTc_S_2c_D_`
+
+To make the entry as easy as possible for beginners and experts alike, we have decided to make our tool open source.
+
+```py
+def EAEEAEOE__r_PL_C_M_NTc_S_2c_D_(s: str, OE__v_W_LS='aeiouAEIOU') -> str:
+
+    return f"{''.join(c for c in s if c in OE__v_W_LS)}__{''.join('_' if c in OE__v_W_LS else c for c in s)}"
+```
+
+Usage:
+1. Install python3.9.13
+2. Run our tool on a given variable name written in sARCASTICcASEWrite better code.
+3. Write better code!
+
+We expect that this contribution will enrich the coding community and look forward to a soon revision of PEP8 and the Linux kernel coding style.
+
+`@thisRyan` & `@nonchris`  
+Your inventors of [ExceptionalProgramming](https://gist.github.com/nonchris/39ac230b6870af421e39c8a6cd21d47e) & `EAEEAE__r_PL_C_M_NTc_S_`
+
+Special thanks to `@paulmiro` for helping with the implementation!  
+
+`EEOAIEOUu__n_V_Rg_NN_g_V_y___P`!
 
 
 ## Setup
@@ -66,26 +81,6 @@ Or use a json-file expected at: `./data/config.json` like:
 ```
 
 _If a variable is set using env and json **the environment-variable replaces the json**!_
-
-
-# I'm new to bots - where to start?
-Have a look at `src/discord_bot/cogs/misc.py` this is a good place to start with your first smaller functions.  
-You'll find some basic examples there.  
-Try to modify the `ping`-command or start with a small listener (`on_message`) that responds to each message the bot receives.  
-Or write a slash command that sends the date the [member joined the server](https://discordpy.readthedocs.io/en/latest/api.html?highlight=joined#discord.Member.joined_at).  
-
-You can expand to yor own, new modules when you feel ready for it :)  
-The official docs for discord.py are [here](https://discordpy.readthedocs.io/en/latest/api.html?highlight=guild#api-reference).  
-There are also very well documented [examples in the official repository](https://github.com/Rapptz/discord.py/tree/master/examples).
-
-### about
-This repository contains code that was written by me across various bot-projects, like:  
-https://github.com/nonchris/discord-fury  
-https://github.com/nonchris/quiz-bot  
-https://github.com/Info-Bonn/verification-listener  
-https://github.com/nonchris/discord-role-selection/tree/main/src/bot
-
-I collected the most useful and generic functions to save me some time when starting the next bot-project.
 
 ### documentation
 In order to render this documentation, just call `doxygen`
