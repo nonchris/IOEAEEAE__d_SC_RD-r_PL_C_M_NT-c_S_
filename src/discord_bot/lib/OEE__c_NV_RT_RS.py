@@ -1,7 +1,7 @@
 from string import ascii_letters, digits, whitespace
 
 
-def EAEEAEOE__r_PL_C_M_NTc_S_2c_D_(s: str, OE__v_W_LS='aeiouAEIOU') -> str:
+def EAEEAEOE__r_PL_C_M_NTc_S_2c_D_(s: str, OE__v_W_LS='aeiouäöüAEIOUÄÖÜ') -> str:
     return f"{''.join(c for c in s if c in OE__v_W_LS)}__{''.join('_' if c in OE__v_W_LS else c for c in s)}"
 
 
