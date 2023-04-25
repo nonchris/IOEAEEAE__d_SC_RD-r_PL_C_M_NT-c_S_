@@ -37,29 +37,39 @@ class ReplacementCase(commands.Cog):
     # @app_commands.guild_only
     async def replacement_case_command(self,
                          interaction: discord.Interaction,
-                         text_in_sarcastic_case: str,
-                         mode: Optional[Literal["silent", "loud"]]):
+                         text: str,
+                         mode: Optional[Literal["silent", "loud"]],
+                         preserver_white_spaces: bool = True,
+                         get_escaped: bool = False):
         """
         Replacing text in sARCASTIC_cASE to EAEEAE__r_PL_C_M_NTc_S_
         """
-        replacement_text = EAEEAE__r_PL_C_M_NTc_S_(text_in_sarcastic_case)
-        print("xxxxx")
+        replacement_text = EAEEAE__r_PL_C_M_NTc_S_(text,
+                                                   EEEIEAE__pR_S_RV_wH_T_SP_C_=preserver_white_spaces,
+                                                   eAE___SC_P_=True)
+
+        if get_escaped:
+            replacement_text = f"```{replacement_text}```"
+
         await interaction.response.send_message(replacement_text, ephemeral=mode == "silent")
 
     @app_commands.command(name="sarcastic_case", description="Convert a string to sarcastic case")
     # @app_commands.guild_only
     async def sarcastic_case_command(self,
                          interaction: discord.Interaction,
-                         text_in_sarcastic_case: str,
-                         mode: Optional[Literal["silent", "loud"]]):
+                         text: str,
+                         mode: Optional[Literal["silent", "loud"]],
+                         preserver_white_spaces: bool = True
+                         ):
         """
         Replacing text to sARCASTIC_cASE
         """
-        replacement_text = AAIAE__s_RC_ST_Cc_S_(text_in_sarcastic_case)
-        print("xxxxx")
+        replacement_text = AAIAE__s_RC_ST_Cc_S_(text,
+                                                EEEIEAE__pR_S_RV_wH_T_SP_C_=preserver_white_spaces)
+
         await interaction.response.send_message(replacement_text, ephemeral=mode == "silent")
 
-    @app_commands.guild_only
+
     async def replacement_case_context(self, interaction: discord.Interaction, message: discord.Message):
         """
         Replacing text in sARCASTIC_cASE to EAEEAE__r_PL_C_M_NTc_S_
@@ -67,13 +77,12 @@ class ReplacementCase(commands.Cog):
         # await interaction.response.defer(ephemeral=False, thinking=False)
         text = message.content
 
-        # TODO call replacement case
-        replacement_text = EAEEAE__r_PL_C_M_NTc_S_(text)
+        replacement_text = EAEEAE__r_PL_C_M_NTc_S_(text, EEEIEAE__pR_S_RV_wH_T_SP_C_=True, eAE___SC_P_=True)
 
         await interaction.response.send_message(content=replacement_text)
         # await message.reply(replacement_text)
 
-    @app_commands.guild_only
+
     async def to_sarcastic_case_context(self, interaction: discord.Interaction, message: discord.Message):
         """
         Replacing normal text to sARCASTIC_cASE
@@ -81,7 +90,7 @@ class ReplacementCase(commands.Cog):
         # await interaction.response.defer(ephemeral=False, thinking=False)
         text = message.content
 
-        replacement_text = AAIAE__s_RC_ST_Cc_S_(text)
+        replacement_text = AAIAE__s_RC_ST_Cc_S_(text, EEEIEAE__pR_S_RV_wH_T_SP_C_=True)
 
         await interaction.response.send_message(content=replacement_text)
         # await message.reply(replacement_text)

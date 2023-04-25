@@ -17,16 +17,16 @@ setup(
     # TODO: Adjust your project information here
     name='discord_bot',
     version=version,
-    description='A discord bot template',
+    description='The official bot for EAEEAE__r_PL_C_M_NTc_S_ and sARCASTICcASE',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/nonchris/discord-bot',
+    url='https://github.com/nonchris/IOEAEEAE__d_SC_RD-r_PL_C_M_NT-c_S_',
     author='nonchris',
     author_email='info@nonchris.eu',
 
     project_urls={
-        'Bug Reports': 'https://github.com/nonchris/discord-bot/issues',
-        'Source': 'https://github.com/https://github.com/nonchris/discord-bot',
+        'Bug Reports': 'https://github.com/nonchris/IOEAEEAE__d_SC_RD-r_PL_C_M_NT-c_S_/issues',
+        'Source': 'https://github.com/nonchris/IOEAEEAE__d_SC_RD-r_PL_C_M_NT-c_S_',
     },
 
     keywords='discord-bot',
