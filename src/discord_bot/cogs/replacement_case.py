@@ -69,7 +69,7 @@ class ReplacementCase(commands.Cog):
 
         await interaction.response.send_message(replacement_text, ephemeral=mode == "silent")
 
-    @app_commands.guild_only
+
     async def replacement_case_context(self, interaction: discord.Interaction, message: discord.Message):
         """
         Replacing text in sARCASTIC_cASE to EAEEAE__r_PL_C_M_NTc_S_
@@ -82,7 +82,7 @@ class ReplacementCase(commands.Cog):
         await interaction.response.send_message(content=replacement_text)
         # await message.reply(replacement_text)
 
-    @app_commands.guild_only
+
     async def to_sarcastic_case_context(self, interaction: discord.Interaction, message: discord.Message):
         """
         Replacing normal text to sARCASTIC_cASE
