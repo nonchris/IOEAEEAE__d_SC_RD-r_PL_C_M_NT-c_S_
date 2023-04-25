@@ -22,7 +22,7 @@ def EAEEAEOE__r_PL_C_M_NTc_S_2c_D_(s: str, OE__v_W_LS='aeiouAEIOU') -> str:
 
 Usage:
 1. Install python3.9.13. 
-2. Run our tool on a given variable name written in sARCASTICcASEWrite better code.  
+2. Run our tool on a given variable name written in sARCASTICcASE.  
 3. Write better code!
 
 We expect that this contribution will enrich the coding community and look forward to a soon revision of PEP8 and the Linux kernel coding style.
