@@ -67,8 +67,6 @@ class ReplacementCase(commands.Cog):
         replacement_text = AAIAE__s_RC_ST_Cc_S_(text,
                                                 EEEIEAE__pR_S_RV_wH_T_SP_C_=preserver_white_spaces)
 
-        replacement_text = f"```{replacement_text}```"
-
         await interaction.response.send_message(replacement_text, ephemeral=mode == "silent")
 
     @app_commands.guild_only
