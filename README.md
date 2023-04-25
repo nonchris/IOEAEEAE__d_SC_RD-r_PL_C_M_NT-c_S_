@@ -27,10 +27,10 @@ Usage:
 
 We expect that this contribution will enrich the coding community and look forward to a soon revision of PEP8 and the Linux kernel coding style.
 
-`@thisRyan` & `@nonchris`  
+@thisRyan & @nonchris  
 Your inventors of [ExceptionalProgramming](https://gist.github.com/nonchris/39ac230b6870af421e39c8a6cd21d47e) & `EAEEAE__r_PL_C_M_NTc_S_`
 
-Special thanks to `@paulmiro` for helping with the implementation!  
+Special thanks to @paulmiro for helping with the implementation and @lgoette for the emotional support!  
 
 `EEOAIEOUu__n_V_Rg_NN_g_V_y___P`!
 
