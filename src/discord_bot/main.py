@@ -1,7 +1,14 @@
 #!/bin/env python
+import sys
 
 import discord
 from discord.ext import commands
+
+if __package__ is None and not hasattr(sys, "frozen"):
+    import os.path
+
+    path = os.path.realpath(os.path.abspath(__file__))
+    sys.path.insert(0, os.path.dirname(os.path.dirname(path)))
 
 # setup of logging and env-vars
 # logging must be initialized before environment, to enable logging in environment
