@@ -50,7 +50,8 @@ class MyBot(commands.Bot):
         # TODO: Register your extensions here
         initial_extensions = [
             '.cogs.misc',
-            '.cogs.help'
+            '.cogs.help',
+            '.cogs.replacement_case'
         ]
 
         for extension in initial_extensions:
