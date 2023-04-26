@@ -69,6 +69,21 @@ class ReplacementCase(commands.Cog):
 
         await interaction.response.send_message(replacement_text, ephemeral=mode == "silent")
 
+    @app_commands.command(name="about", description="About that bots mission")
+    # @app_commands.guild_only
+    async def about_the_bot(self,
+                            interaction: discord.Interaction,
+                            mode: Optional[Literal["silent", "loud"]]):
+        """
+        Whats the mission of this bot?
+        """
+
+        await interaction.response.send_message(
+           "Please visit our github for more information and possible contributions.\n"
+           "https://github.com/nonchris/IOEAEEAE__d_SC_RD-r_PL_C_M_NT-c_S_\n"
+           "AEaEAA\_\_h_V\_\_gR\_\_Td\_Y!",
+           ephemeral=mode == "silent")
+
 
     async def replacement_case_context(self, interaction: discord.Interaction, message: discord.Message):
         """
